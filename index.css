@@ -1,0 +1,255 @@
+*{
+    font-family: "Open Sans", serif;
+}
+.header{
+    background-image:url(images/developer.png),url(images/header_bg.png);
+    background-repeat: no-repeat;
+    background-position: top left,right bottom;
+    background-color: #FFF8F3;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 80px;
+}
+.nav-title{
+    font-size: 45px;
+    font-weight:bolder;
+    padding:0 70px;
+}
+.r{
+    color: #FD6E0A;
+}
+nav ul li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+nav ul a {
+    text-decoration: none;
+    color: #474747;
+    
+}
+.btn{
+    background-color: #FD6E0A;
+    color:white;
+    font-size: 18px;
+    font-weight: bold;
+    padding:15px 30px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: #aa5416;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 0 150px;
+}
+.greetings{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: -3rem;
+}
+.name{
+    font-size: 70px;
+    font-weight:bold;
+}
+main{
+    max-height: 1140px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+/* about starts here */
+
+.about-section{
+
+}
+.about-container{
+    background-color: #FFF8F3;
+    margin:100px 200px;
+    padding: 130px 156px;
+    border-radius: 10px;
+    box-shadow: 10px 0px 15px rgb(163, 161, 161);
+}
+.about-subcontainer{
+    border: 1px solid black;
+    max-width: 800px;
+    max-height: 300px;
+    padding: 30px;
+    background-color: #ffffff76;
+    border-radius: 10px;
+}
+.about-me{
+    font-size: 30px;
+    text-align: center;
+    margin-top: -1.4rem;
+
+}
+.about-description{
+    font-size: medium;
+    opacity: .6;
+}
+.bio{
+    display: flex;
+    justify-content: space-around;
+    font-size: 15px;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: -2.5rem;
+}
+.sp{
+    margin-bottom: -1.5rem;
+    font-size: medium;
+    opacity: .6;
+}
+
+/* what i do section  */
+
+.do-section{
+    text-align: center;
+    margin:100px 200px;
+    padding: 130px 156px;
+    max-width: 1000px;
+    max-height: 1000px;
+}
+.do-title p{
+    opacity: .6;
+}
+.do-title{
+    padding-bottom:40px;
+}
+.skills{
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+
+}
+.skill{
+    box-shadow:5px 5px 5px 5px #33312f13;
+    border-radius: 5px;
+    height: 270px;
+    width: 350px;
+    margin-left: 25px;
+    /* margin-bottom: 25px; */
+}
+.skill p{
+    font-size: 12px;
+    opacity: .6;
+    padding: 15px;
+    text-align: center;
+}
+hr{
+    margin-top: 250px;
+    margin-bottom: -300px;
+}
+/* footer starts here  */
+.footer{
+    margin-top: 300px;
+    background-color: #FFF8F3;
+    display: flex;
+    justify-content: space-around;
+    /* padding: 25px; */
+    max-height: 1000px;
+    text-align: center ;
+    padding: 100px 200px;
+    text-align: left;
+}
+.connect{
+    width: 50%;
+    
+    
+}
+.form{
+    width: 50%;
+    display: flex;
+    flex-direction:column;
+    padding-left: 30px;
+    
+}
+.for{
+    display: flex;
+    flex-direction: column;
+    margin-left: -.8rem;
+}
+#input{
+    margin: 10px;
+    padding: 15px ;
+    border-radius: 5px;
+    border: none;
+}
+#fill{
+    opacity: .6;
+}
+/* .hide{
+    display: none;
+} */
+@media  screen and (max-width:576px) {
+    .do-section{
+        margin: 0;
+        padding: 1rem;
+    }
+    .skills{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+    .do-title p {
+        margin: 0;
+    }
+
+    .about-container{
+        margin: 0;
+        padding: 0;
+        
+    }
+    .about-subcontainer{
+        max-height:1000px;
+        padding: 1rem;
+    }
+    .bio{
+        flex-direction: column;
+        margin: 2rem 0;
+        row-gap: 1rem;
+    }
+    .footer{
+        margin:55rem 0 0 0;
+        padding:1rem;
+        flex-direction: column;
+    }
+    .connect, .form{
+        width: 100%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+    hr{
+        display: none;
+    }
+    nav{
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    .header-content{
+        flex-direction: column-reverse;
+        margin-bottom: 5rem;
+        width: 100%;
+        padding:1rem 0;
+    }
+    .user-info {
+        text-align: center;
+    }
+    .user-info p br {
+        display: none;
+    }
+    #hardy{
+        padding-left: 5rem;
+    }
+}
