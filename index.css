@@ -249,6 +249,9 @@ hr{
     .user-info p br {
         display: none;
     }
+    .user-info h1{
+        text-align: right;
+    }
     #hardy{
         padding-left: 5rem;
     }
